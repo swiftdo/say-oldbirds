@@ -1,7 +1,10 @@
 
 ![logo](http://blog.loveli.site/2020-08-23-logo.png)
 
-## say-oldbirds
+[![Swift](https://img.shields.io/badge/Swift-5.2-orange.svg)](https://swift.org)
+[![Vapor4](https://img.shields.io/badge/Vapor-4-F6CBCA.svg)](https://github.com/vapor/vapor)
+[![Xcode](https://img.shields.io/badge/Xcode-11.6-blue.svg)](https://developer.apple.com/xcode)
+[![MIT](https://img.shields.io/badge/licenses-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
 vapor4 实现留言板
 
