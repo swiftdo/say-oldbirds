@@ -14,7 +14,7 @@
 # Run migrations: docker-compose up migrate
 #       Stop all: docker-compose down (add -v to wipe db)
 #
-version: '3.7'
+version: "3.7"
 
 volumes:
   db_data:
@@ -22,9 +22,9 @@ volumes:
 x-shared_environment: &shared_environment
   LOG_LEVEL: ${LOG_LEVEL:-debug}
   DATABASE_HOST: db
-  DATABASE_NAME: vapor_database
-  DATABASE_USERNAME: vapor_username
-  DATABASE_PASSWORD: vapor_password
+  DATABASE_NAME: say-oldbirds
+  DATABASE_USERNAME: oldbird
+  DATABASE_PASSWORD: 123456
 
 services:
   app:
@@ -36,9 +36,18 @@ services:
     depends_on:
       - db
     ports:
-      - '8080:8080'
+      - "8080:8080"
     # user: '0' # uncomment to run as root for testing purposes even though Dockerfile defines 'vapor' user.
-    command: ["serve", "--env", "production", "--hostname", "0.0.0.0", "--port", "8080"]
+    command:
+      [
+        "serve",
+        "--env",
+        "production",
+        "--hostname",
+        "0.0.0.0",
+        "--port",
+        "8080",
+      ]
   migrate:
     image: say-oldbirds:latest
     build:
@@ -71,4 +80,4 @@ services:
       POSTGRES_PASSWORD: vapor_password
       POSTGRES_DB: vapor_database
     ports:
-      - '5432:5432'
+      - "5432:5432"
