@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/frontend.css">
+  <title>say-oldbirds</title>
+</head>
+
+<body>
+  <div class="so-nav">
+    <div class='so-title-big'>Say OldBirds</div>
+    <div class='so-title-small'>to the world</div>
+  </div>
+  <div class="so-content">
+    #import("body")
+  </div>
+  
+</body>
+
+</html>
+

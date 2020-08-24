@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Menlo, Roboto;
+    font-size: 16px;
+    line-height: 1.5em;
+    background: #F2F2F2;
+    width: 100%;
+}
+
+hr {
+    margin: 15px 0px;
+    border: none;
+    border-width: 0.5px;
+    border-style: solid;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.so-nav {
+    display: flex;
+    margin: 40px 80px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.so-title-big {
+    font-size: 50px;
+    color: #EB5757;
+    font-family: Menlo;
+}
+
+.so-title-small {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #828282;
+    font-family: PingFang SC;
+}
+
+.so-content {
+    margin: 50px 20% 20px 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-items: flex-start;
+}
+
+.so-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.so-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.so-form-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #4F4F4F;
+}
+
+.so-input {
+    outline-style: none;
+    border: none;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.so-message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.so-textarea {
+    outline-style: none;
+    border: none;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.so-submit {
+    margin-top: 30px;
+
+    width: 150px;
+    height: 44px;
+    outline-style: none;
+    border: none;
+    border-radius: 10px;
+    background: #EB5757;
+    font-size: 18px;
+    color: white;
+}
+
+.so-list {
+    margin-top: 50px;
+}
+
+.so-list-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.so-list-body {
+    border-radius: 10px;
+    background: white;
+}
+
+.so-list-cell {
+    padding: 20px;
+}
+
+.so-cell-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.so-cell-name {
+    font-size: 18px;
+    color: #EB5757;
+}
+
+.so-cell-time {
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.so-cell-message {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
