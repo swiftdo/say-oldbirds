@@ -1,19 +1,19 @@
 #extend("base"):
   #export("body"):
-    <form class='so-form'>
+    <form class="so-form" method="post" action="/create" >
       <div class="so-name">
         <div class="so-form-title">name</div>
         <input class='so-input' type="text" name="name" />
       </div>
       <div class="so-message">
         <div class="so-form-title">message</div>
-        <textarea class="so-textarea" rows="3"></textarea>
+        <textarea class="so-textarea" rows="3" name="body"></textarea>
       </div>
       <input class="so-submit" type="submit" value="Submit" />
     </form>
 
     <div class="so-list">
-      <div class="so-list-title">Messges(3)</div>
+      <div class="so-list-title">Messges(#(count))</div>
       <div class="so-list-body">
           #if(messages != nil):
             #for(data in messages):

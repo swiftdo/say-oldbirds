@@ -133,6 +133,7 @@ h3 {
 
 .so-list-cell {
     padding: 20px;
+    border-bottom: #eee solid 1px;
 }
 
 .so-cell-header {
