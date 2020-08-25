@@ -143,8 +143,9 @@ h3 {
 }
 
 .so-cell-name {
-    font-size: 18px;
+    font-size: 20px;
     color: #EB5757;
+    font-family: PingFang SC;
 }
 
 .so-cell-time {
@@ -153,7 +154,27 @@ h3 {
 }
 
 .so-cell-message {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 10px;
     color: #333;
+    font-family: Menlo;
 }
+
+.so-id {
+    color: #BDBDBD;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.so-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px auto;
+    color: #4F4F4F;
+}
+
+.so-footer a {
+    margin: 0px 5px;
+}
+

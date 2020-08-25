@@ -20,7 +20,7 @@
               <div class="so-list-cell">
                 <div class="so-cell-header">
                   <div class="so-cell-name">
-                    #(data.name)
+                    #(data.name)<span class="so-id">##(data.id)</span>
                   </div>
                   <div class="so-cell-time">#(data.time)</div>
                 </div>
@@ -35,5 +35,6 @@
 
       </div>
     </div>
+    <div class="so-footer">©2020<a href="http://oldbird.run">OldBirds</a> | <a href="https://github.com/swiftdo/say-oldbirds">swiftdo/say-oldbirds</a></div>
   #endexport
 #endextend
