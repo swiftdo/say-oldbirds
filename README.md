@@ -12,6 +12,8 @@ vapor4 实现留言板
 
 ## 规划
 
+![设计稿](http://blog.loveli.site/2020-08-26-landscape.png)
+
 * [x] 后端程序开发
   * [x] 项目结构
   * [x] 数据库建模
