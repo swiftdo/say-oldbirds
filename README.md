@@ -8,7 +8,7 @@
 
 vapor4 实现留言板
 
-在线预览：[https://say-oldbirds.herokuapp.com/](https://say-oldbirds.herokuapp.com/)
+在线预览(heroku+leaf)：[https://say-oldbirds.herokuapp.com/](https://say-oldbirds.herokuapp.com/)
 
 ## 规划
 
