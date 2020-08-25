@@ -8,16 +8,17 @@
 
 vapor4 实现留言板
 
+在线预览：[https://say-oldbirds.herokuapp.com/](https://say-oldbirds.herokuapp.com/)
+
 ## 规划
 
-* [ ] 后端程序开发
-  * [ ] 项目结构
-  * [ ] 数据库建模
-  * [ ] 虚拟数据生成
-* [ ] 页面编写，基于 Leaf
+* [x] 后端程序开发
+  * [x] 项目结构
+  * [x] 数据库建模
+* [x] 页面编写，基于 Leaf
 * [ ] 部署
   * [ ] docker
-  * [ ] heroku
+  * [x] heroku
 * [ ] 前后端分离，flutter web 前端
 
 ## 关于
