@@ -21,12 +21,19 @@ public func configure(_ app: Application) throws {
     /// brew services stop postgresql
     /// MacOS 创建一个 PostgresSQL 用户：createuser root -P
     /// MacOS 创建数据库:  createdb say-oldbirds -O root -E UTF8 -e
-    app.databases.use(.postgres(
-        hostname: Environment.get("DATABASE_HOST") ?? "localhost",
-        username: Environment.get("DATABASE_USERNAME") ?? "root",
-        password: Environment.get("DATABASE_PASSWORD") ?? "", // macos 无需设置密码
-        database: Environment.get("DATABASE_NAME") ?? "say-oldbirds"
-    ), as: .psql)
+
+    if let databaseURL = Environment.get("DATABASE_URL") {
+        app.databases.use(try .postgres(
+            url: databaseURL
+        ), as: .psql)
+    } else {
+        app.databases.use(.postgres(
+            hostname: Environment.get("DATABASE_HOST") ?? "localhost",
+            username: Environment.get("DATABASE_USERNAME") ?? "root",
+            password: Environment.get("DATABASE_PASSWORD") ?? "", // macos 无需设置密码
+            database: Environment.get("DATABASE_NAME") ?? "say-oldbirds"
+        ), as: .psql)
+    }
 
     app.migrations.add(CreateMessage())
 
