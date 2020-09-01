@@ -7,7 +7,7 @@
 
 import Fluent
 
-struct WebMigration_v1_0_0: Migration {
+struct CreateMessage: Migration {
     func prepare(on database: Database) -> EventLoopFuture<Void> {
         return database.schema(Message.schema)
             .field(Message.FieldKeys.id, .int, .identifier(auto: true))

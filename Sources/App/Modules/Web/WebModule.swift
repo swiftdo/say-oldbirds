@@ -14,7 +14,7 @@ struct WebModule: Module {
     }
 
     var migrations: [Migration] {
-        [WebMigration_v1_0_0()]
+        [CreateMessage()]
     }
 
 }
