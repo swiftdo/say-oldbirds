@@ -8,7 +8,10 @@
 
 vapor4 实现留言板
 
-在线预览(heroku+leaf)：[https://say-oldbirds.herokuapp.com/](https://say-oldbirds.herokuapp.com/)
+**在线预览(heroku+leaf)**：[https://say-oldbirds.herokuapp.com/](https://say-oldbirds.herokuapp.com/)
+
+**在线预览(github pages+flutter)**：[https://swiftdo.github.io/say-oldbirds-flutter](https://swiftdo.github.io/say-oldbirds-flutter)
+  * [swiftdo/say-oldbirds-flutter](https://github.com/swiftdo/say-oldbirds-flutter)
 
 ## 规划
 
