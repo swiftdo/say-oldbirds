@@ -28,7 +28,7 @@ extension Message {
         static var id: FieldKey {"id"}
     }
 
-    struct ViewContext: Encodable {
+    struct ViewContext: Codable {
         var id: Int
         var name: String
         var message: String

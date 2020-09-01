@@ -37,6 +37,7 @@ public func configure(_ app: Application) throws {
 
     let modules: [Module] = [
         WebModule(),
+        ApiModule(),
     ]
 
     for module in modules {
