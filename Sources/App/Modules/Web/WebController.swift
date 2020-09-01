@@ -2,12 +2,7 @@ import Fluent
 import Vapor
 import Leaf
 
-struct MessageController: RouteCollection {
-    func boot(routes: RoutesBuilder) throws {
-        routes.get(use: index)
-        routes.post("create", use: create)
-    }
-
+struct WebController {
     func index(req: Request) throws -> EventLoopFuture<View> {
         struct Context: Encodable {
             let messages: [Message.ViewContext]

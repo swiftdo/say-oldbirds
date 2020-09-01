@@ -1,6 +1,13 @@
+//
+//  File.swift
+//  
+//
+//  Created by laijihua on 2020/9/1.
+//
+
 import Fluent
 
-struct CreateMessage: Migration {
+struct WebMigration_v1_0_0: Migration {
     func prepare(on database: Database) -> EventLoopFuture<Void> {
         return database.schema(Message.schema)
             .field(Message.FieldKeys.id, .int, .identifier(auto: true))

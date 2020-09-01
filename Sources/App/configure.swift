@@ -35,7 +35,11 @@ public func configure(_ app: Application) throws {
         ), as: .psql)
     }
 
-    app.migrations.add(CreateMessage())
+    let modules: [Module] = [
+        WebModule(),
+    ]
 
-    try routes(app)
+    for module in modules {
+        try module.configure(app)
+    }
 }
