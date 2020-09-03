@@ -5,8 +5,18 @@ import Leaf
 
 // configures your application
 public func configure(_ app: Application) throws {
+    let corsConfiguration = CORSMiddleware.Configuration(
+        allowedOrigin: .all,
+        allowedMethods: [.GET, .POST, .PUT, .OPTIONS, .DELETE, .PATCH],
+        allowedHeaders: [.accept, .authorization, .contentType, .origin, .xRequestedWith, .userAgent, .accessControlAllowOrigin]
+    )
+    let cors = CORSMiddleware(configuration: corsConfiguration)
+    let error = ErrorMiddleware.default(environment: app.environment)
+    let file = FileMiddleware(publicDirectory: app.directory.publicDirectory)
 
-    app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
+    app.middleware.use(cors)
+    app.middleware.use(error)
+    app.middleware.use(file)
 
     /// 配置 Leaf
     app.views.use(.leaf)
