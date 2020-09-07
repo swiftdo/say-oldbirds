@@ -24,7 +24,7 @@ vapor4 实现留言板
 * [ ] 部署
   * [ ] docker
   * [x] heroku
-* [ ] 前后端分离，flutter web 前端
+* [x] 前后端分离，flutter web 前端
 * [ ] 补充实战课程，将在下方的平台中推出。
 
 ## 关于
