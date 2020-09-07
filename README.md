@@ -23,7 +23,7 @@ vapor4 实现留言板
 * [x] 页面编写，基于 Leaf
 * [x] 部署
   * [x] heroku
-* [x] 前后端分离，flutter web 前端
+* [x] 前后端分离，flutter web 前端：[say-oldbirds-flutter](https://swiftdo.github.io/say-oldbirds-flutter)
 * [ ] 补充实战课程，将在下方的平台中推出。
 
 ## 关于
