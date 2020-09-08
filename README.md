@@ -24,7 +24,7 @@ vapor4 实现留言板
 * [x] 部署
   * [x] heroku
 * [x] 前后端分离，flutter web 前端：[say-oldbirds-flutter](https://swiftdo.github.io/say-oldbirds-flutter)
-* [ ] 补充实战课程，将在下方的平台中推出。
+* [x] [实战课程](https://oldbird.run/swift/vapor/t6-say-oldbirds.html)。
 
 ## 关于
 
