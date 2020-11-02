@@ -27,6 +27,10 @@ vapor4 实现留言板
 * [x] 前后端分离，flutter web 前端：[say-oldbirds-flutter](https://swiftdo.github.io/say-oldbirds-flutter)
 * [x] [实战课程](https://oldbird.run/swift/vapor/t6-say-oldbirds.html)。
 
+## Other
+
+* [swiftdo/boke](https://github.com/swiftdo/boke) 一个用 Vapor4 开发博客的博客项目(开发中...)
+
 ## 关于
 
 更多技术分析，尽情关注官方公众号 **OldBirds**
